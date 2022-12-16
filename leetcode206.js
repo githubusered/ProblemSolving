@@ -14,7 +14,7 @@ function ListNode(val, next) {
  * @param {ListNode} head
  * @return {ListNode}
  */
-
+// time complexity O(n) 
 let head = new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4,new ListNode(5,null)))))
 var reverseList = function(head) {
   let prev = null;
@@ -28,7 +28,6 @@ var reverseList = function(head) {
     curr = next;
   }
 
-//   console.log(prev);
   return prev;
 }
 reverseList(head)
